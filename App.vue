@@ -15,3 +15,10 @@ export default {
   },
 }
 </script>
+
+<style>
+body {
+  background-image: url('./src/img/pink_blue_outdoor.jpeg');
+  background-size: cover;
+}
+</style>

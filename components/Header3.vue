@@ -1,5 +1,5 @@
 <template>
-  <header class="flex items-center bg-green-500 p-4">
+  <header class="flex items-center p-4 gradient-header">
     <div class="w-1/3 text-white font-bold text-left">
       <p class="text-white font-bold mt-4">Accueil</p>
       <button @click.prevent="redirectToHome">
@@ -11,7 +11,7 @@
       </button>
     </div>
     <div class="w-1/3 text-center">
-      <img src="../src/img/anime-logo.png" alt="logo anime-cookin-shop" />
+      <img src="../src/img/logo/anime-logo.png" alt="logo anime-cookin-shop" />
     </div>
     <div class="relative w-1/3 text-right">
       <p class="text-white font-bold mt-4">Nos produits</p>
@@ -24,26 +24,26 @@
       </button>
       <div
         v-if="menuVisible"
-        class="absolute right-0 mt-2 py-2 bg-green-800 rounded-md shadow-md"
+        class="absolute right-0 mt-2 py-2 bg-gradient-to-b from-purple-600 to-blue-600 rounded-md shadow-md"
       >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-green-700"
+          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
           >Item 1</a
         >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-green-700"
+          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
           >Item 2</a
         >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-green-700"
+          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
           >Item 3</a
         >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-green-700"
+          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
           >Item 4</a
         >
       </div>
@@ -70,11 +70,8 @@ export default {
 </script>
 
 <style>
-.bg-green-800 {
-  background-color: #a9c73a;
-}
-
-.hover\:bg-green-700:hover {
-  background-color: #a9c73a;
+.gradient-header {
+  margin-top: 100px;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
 }
 </style>
