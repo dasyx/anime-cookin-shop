@@ -74,4 +74,8 @@ export default {
   margin-top: 100px;
   background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
 }
+header img {
+  width: 200px;
+  margin: auto;
+}
 </style>
