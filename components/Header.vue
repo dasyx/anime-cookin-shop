@@ -24,26 +24,26 @@
       </button>
       <div
         v-if="menuVisible"
-        class="absolute right-0 mt-2 py-2 bg-gradient-to-b from-purple-600 to-blue-600 rounded-md shadow-md"
+        class="absolute right-0 mt-2 py-2 bg-primary rounded-md shadow-md"
       >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
+          class="block px-4 py-2 text-white font-bold hover:bg-secondary"
           >Item 1</a
         >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
+          class="block px-4 py-2 text-white font-bold hover:bg-secondary"
           >Item 2</a
         >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
+          class="block px-4 py-2 text-white font-bold hover:bg-secondary"
           >Item 3</a
         >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-gradient-to-b from-purple-600 to-blue-600"
+          class="block px-4 py-2 text-white font-bold hover:bg-secondary"
           >Item 4</a
         >
       </div>
@@ -68,14 +68,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.gradient-header {
-  margin-top: 100px;
-  background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.3));
-}
-header img {
-  width: 200px;
-  margin: auto;
-}
-</style>

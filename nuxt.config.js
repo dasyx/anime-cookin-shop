@@ -4,4 +4,7 @@ export default {
     "@nuxtjs/tailwindcss",
     'nuxt-icon'
   ],
+  css: [
+    '@/src/assets/styles.css'
+  ],
 };

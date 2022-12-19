@@ -1,0 +1,25 @@
+/*       APP       
+--------------------*/
+
+body {
+  background-image: url("../img/pink_blue_outdoor.jpeg");
+  background-size: cover;
+}
+
+
+
+/*     HEADER      
+--------------------*/
+
+.gradient-header {
+  margin-top: 100px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.5),
+    rgba(0, 0, 255, 0.3)
+  );
+}
+header img {
+  width: 200px;
+  margin: auto;
+}
