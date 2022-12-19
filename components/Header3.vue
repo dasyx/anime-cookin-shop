@@ -1,13 +1,26 @@
 <template>
   <header class="flex items-center bg-green-500 p-4">
-    <div class="w-1/3 text-white font-bold">Accueil</div>
+    <div class="w-1/3 text-white font-bold text-left">
+      <p class="text-white font-bold mt-4">Accueil</p>
+      <button @click.prevent="redirectToHome">
+         <Icon
+          class="mr-6 mt-10"
+          name="ant-design:home-outlined"
+          size="48"
+        />
+      </button>
+    </div>
     <div class="w-1/3 text-center">
-      <img src="../src/img/anime-logo.png" alt="logo anime-cookin-shop">
+      <img src="../src/img/anime-logo.png" alt="logo anime-cookin-shop" />
     </div>
     <div class="relative w-1/3 text-right">
       <p class="text-white font-bold mt-4">Nos produits</p>
       <button @click="toggleMenu" class="text-white font-bold">
-        <Icon class="mr-6 mt-10" name="material-symbols:soup-kitchen-outline-rounded" size="48" />
+        <Icon
+          class="mr-6 mt-10"
+          name="cil:restaurant"
+          size="48"
+        />
       </button>
       <div
         v-if="menuVisible"
@@ -39,9 +52,7 @@
 </template>
 
 <script>
-
 export default {
-  
   data() {
     return {
       menuVisible: false,
@@ -50,6 +61,9 @@ export default {
   methods: {
     toggleMenu() {
       this.menuVisible = !this.menuVisible;
+    },
+    redirectToHome() {
+      this.$router.push({ path: "/" });
     },
   },
 };
