@@ -28,7 +28,8 @@
       >
         <a
           href="#"
-          class="block px-4 py-2 text-white font-bold hover:bg-secondary"
+          id="test"
+          class="block px-4 py-2 font-bold hover:bg-secondary"
           >Item 1</a
         >
         <a

@@ -1,15 +1,9 @@
-/*       APP       
---------------------*/
+@import "/src/assets/_variables";
 
 body {
   background-image: url("../img/pink_blue_outdoor.jpeg");
   background-size: cover;
 }
-
-
-
-/*     HEADER      
---------------------*/
 
 .gradient-header {
   margin-top: 100px;
@@ -22,4 +16,7 @@ body {
 header img {
   width: 200px;
   margin: auto;
+}
+#test {
+  color: $primary;
 }
