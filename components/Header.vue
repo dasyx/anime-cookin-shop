@@ -14,17 +14,17 @@
       <img src="../src/img/logo/anime-logo.png" alt="logo anime-cookin-shop" />
     </div>
     <div class="relative w-1/3 text-right">
-      <p class="text-white font-bold mt-4">Nos produits</p>
+      <p class="text-white font-bold">Infos</p>
       <button @click="toggleMenu" class="text-white font-bold">
         <Icon
-          class="mr-6 mt-10"
+          class="mt-10"
           name="cil:restaurant"
           size="48"
         />
       </button>
       <div
         v-if="menuVisible"
-        class="absolute right-0 mt-2 py-2 bg-primary rounded-md shadow-md"
+        class="dropdown absolute right-0 mt-2 py-2 rounded-md shadow-md"
       >
         <a
           href="#"

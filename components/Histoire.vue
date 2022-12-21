@@ -1,12 +1,11 @@
 <template>
   <div class="text-translate-left-right" v-bind:class="{ 'scrolled': scrolled }">
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
+      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl"
     >
     <img src="../src/img/orange_brown_indoor.jpeg" alt="Image d'illustration" class="w-64 h-64 mr-4">
       Notre restaurant, créé il y a cinq ans, a su se démarquer grâce à son
-      concept novateur qui s'adresse aux passionnés de culture geek, d'animes,
-      de jeux vidéo et de séries. Nous avons mis en place une cuisine créative
+      concept novateur qui s'adresse aux passionnés de culture geek et ce qui gravite autour de ce riche univers. Nous avons mis en place une cuisine créative
       qui s'adresse à tous les sens de nos clients et leur offre une expérience
       culinaire inoubliable.
     </p>
@@ -16,7 +15,7 @@
     v-bind:class="{ 'scrolled': scrolled }"
   >
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
+      class="p-box text-center font-semibold tracking-tight sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl"
     >
     <img src="../src/img/pink_blue_outdoor2.jpeg" alt="Image d'illustration" class="w-64 h-64 mr-4">
       Notre équipe de chefs talentueux a su créer des plats originaux et
@@ -30,7 +29,7 @@
     v-bind:class="{ 'scrolled': scrolled }"
   >
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
+      class="p-box text-center font-semibold tracking-tight sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl"
     >
     <img src="../src/img/pink_blue_outdoor3.jpeg" alt="Image d'illustration" class="w-72 h-64 mr-4">
       Nous sommes convaincus que la nourriture est un moyen de voyager et de
@@ -41,11 +40,11 @@
     </p>
   </div>
   <div
-    class="relative overflow-hidden text-translate-right-left"
+    class="relative overflow-hidden text-translate-right-left" id="lastdiv"
     v-bind:class="{ 'scrolled': scrolled }"
   >
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
+      class="p-box text-center font-semibold tracking-tight sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl"
     >
     <img src="../src/img/pink_blue_outdoor4.jpeg" alt="Image d'illustration" class="w-64 h-64 mr-4">
       Nous espérons que vous aurez l'occasion de venir déguster nos plats et de

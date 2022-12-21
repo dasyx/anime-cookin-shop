@@ -1,8 +1,6 @@
+$pink: darken(rgba(255, 0, 0, .8), 20%);
+$blue: rgb(0, 0, 255);
 
-$primary : green;
+$bg: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.3));
 
-$bg : linear-gradient(
-    180deg,
-    rgba(255, 0, 0, 0.5),
-    rgba(0, 0, 255, 0.3)
-  );
+$footer_bg: darken(rgba(0, 0, 255, 0.5), 50%);

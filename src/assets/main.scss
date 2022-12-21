@@ -25,6 +25,9 @@ header img {
   width: 200px;
   margin: auto;
 }
+.dropdown {
+  background: $pink;
+}
 
 /*      FOOTER 
 --------------------------*/
@@ -34,6 +37,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  background: $footer_bg;
 }
 
 footer.scrolled1 {
@@ -79,4 +83,8 @@ footer.scrolled1 {
   @media screen and (max-width: 720px) {
     margin-bottom: 1.5rem;
   }
+}
+
+#lastdiv {
+  margin-bottom: 80px;
 }
