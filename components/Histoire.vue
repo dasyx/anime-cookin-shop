@@ -1,7 +1,7 @@
 <template>
   <div class="text-translate-left-right" v-bind:class="{ 'scrolled': scrolled }">
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl"
+      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
     >
     <img src="../src/img/orange_brown_indoor.jpeg" alt="Image d'illustration" class="w-64 h-64 mr-4">
       Notre restaurant, créé il y a cinq ans, a su se démarquer grâce à son
@@ -16,7 +16,7 @@
     v-bind:class="{ 'scrolled': scrolled }"
   >
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl"
+      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
     >
     <img src="../src/img/pink_blue_outdoor2.jpeg" alt="Image d'illustration" class="w-64 h-64 mr-4">
       Notre équipe de chefs talentueux a su créer des plats originaux et
@@ -30,7 +30,7 @@
     v-bind:class="{ 'scrolled': scrolled }"
   >
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl"
+      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
     >
     <img src="../src/img/pink_blue_outdoor3.jpeg" alt="Image d'illustration" class="w-72 h-64 mr-4">
       Nous sommes convaincus que la nourriture est un moyen de voyager et de
@@ -45,7 +45,7 @@
     v-bind:class="{ 'scrolled': scrolled }"
   >
     <p
-      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl"
+      class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl"
     >
     <img src="../src/img/pink_blue_outdoor4.jpeg" alt="Image d'illustration" class="w-64 h-64 mr-4">
       Nous espérons que vous aurez l'occasion de venir déguster nos plats et de

@@ -53,9 +53,6 @@ footer.scrolled1 {
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  };
 }
 
 .text-translate-left-right p,
@@ -68,10 +65,18 @@ footer.scrolled1 {
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    width: auto;
+    font-size: 1rem;
+  }
 }
 
 .text-translate-left-right img,
-.text-translate-right-left {
+.text-translate-right-left img {
   object-fit: cover;
   border-radius: 0.5rem;
+  @media screen and (max-width: 720px) {
+    margin-bottom: 1.5rem;
+  }
 }
