@@ -28,24 +28,23 @@
       >
         <a
           href="#"
-          id="test"
-          class="block px-4 py-2 font-bold hover:bg-secondary"
-          >Item 1</a
+          class="block px-4 py-2 text-white font-bold hover:bg-secondary"
+          >Les menus</a
         >
         <a
           href="#"
           class="block px-4 py-2 text-white font-bold hover:bg-secondary"
-          >Item 2</a
+          >La carte</a
         >
         <a
           href="#"
           class="block px-4 py-2 text-white font-bold hover:bg-secondary"
-          >Item 3</a
+          >Commander</a
         >
         <a
           href="#"
           class="block px-4 py-2 text-white font-bold hover:bg-secondary"
-          >Item 4</a
+          >Contact</a
         >
       </div>
     </div>

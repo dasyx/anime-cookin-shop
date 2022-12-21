@@ -1,0 +1,28 @@
+
+// ANIMATION DU TEXTE (HISTOIRE.VUE)
+
+  .scrolled .text-translate-left-right {
+    animation: translate-left-right 1s ease-in-out;
+  }
+  
+  @keyframes translate-left-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .scrolled .text-translate-right-left {
+    animation: translate-right-left 1s ease-in-out;
+  }
+  
+  @keyframes translate-right-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }

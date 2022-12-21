@@ -1,22 +1,55 @@
 @import "/src/assets/_variables";
+@import "/src/assets/_animations";
+
+/*      MAIN      
+-------------------------*/ 
 
 body {
   background-image: url("../img/pink_blue_outdoor.jpeg");
   background-size: cover;
 }
 
+
+
+/*      HEADER
+-------------------------*/ 
+
 .gradient-header {
   margin-top: 100px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 0, 0, 0.5),
-    rgba(0, 0, 255, 0.3)
-  );
+  background: $bg;
 }
 header img {
   width: 200px;
   margin: auto;
 }
-#test {
-  color: $primary;
+
+
+/*      FOOTER 
+--------------------------*/ 
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer.scrolled1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/*      HISTOIRE
+-------------------------*/ 
+
+
+.text-translate-left-right p,
+.text-translate-right-left p {
+  margin: 5rem 0;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
