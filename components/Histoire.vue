@@ -4,7 +4,7 @@
       class="p-box text-center font-semibold text-4xl tracking-tight sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl"
     >
     <img src="../src/img/orange_brown_indoor.jpeg" alt="Image d'illustration" class="w-64 h-64 mr-4">
-      Notre restaurant, créé il y a cinq ans, a su se démarquer grâce à son
+      Notre restaurant, qui a ouvert l'année dernière, a su se démarquer grâce à son
       concept novateur qui s'adresse aux passionnés de culture geek et ce qui gravite autour de ce riche univers. Nous avons mis en place une cuisine créative
       qui s'adresse à tous les sens de nos clients et leur offre une expérience
       culinaire inoubliable.
