@@ -1,21 +1,39 @@
 const mongoose = require("mongoose");
-const userSchema = mongoose.Schema({
-    name: {
-        type: String,
-        required: [true, "Please Include your name"]
-    },
-    email: {
-        type: String,
-        required: [true, "Please Include your email"]
-    },
-    phone: {
-        type: String,
-         required: [true, "Please Include your phone number"]
-    },
-    password: {
-        type: String,
-         required: [true, "Please Include your phone number"]
-    }
+const customerSchema = mongoose.Schema({
+  lastname: {
+    type: String,
+    required: [true, "Inscrivez votre nom svp"],
+  },
+  firstname: {
+    type: String,
+    required: [true, "Inscrivez votre prénom svp"],
+  },
+  phone: {
+    type: String,
+    required: [true, "Inscrivez votre numéro de téléphone svp"],
+  },
 });
-const User = mongoose.model("User", userSchema);
-module.exports = User;
+const orderSchema = new mongoose.Schema({
+  clientId: {
+    type: mongoose.Types.ObjectId,
+    ref: "Client",
+  },
+  items: [String],
+  total: Number,
+});
+const messageSchema = new mongoose.Schema({
+  clientId: {
+    type: mongoose.Types.ObjectId,
+    ref: "Client",
+  },
+  message: String,
+  date: Date,
+});
+
+const customer = mongoose.model("Client", customerSchema);
+const order = mongoose.model("Commande", orderSchema);
+const message = mongoose.model("Message", messageSchema);
+
+module.exports = customer;
+module.exports = order;
+module.exports = message;
