@@ -1,0 +1,1 @@
+export { default } from "file:///home/dasyx/Documents/Dev/anime-cookin-shop/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

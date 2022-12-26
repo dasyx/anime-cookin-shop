@@ -1,0 +1,15 @@
+{
+  "@vite/client": {
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "/home/dasyx/Documents/Dev/anime-cookin-shop/node_modules/nuxt/dist/app/entry.mjs": {
+    "resourceType": "script",
+    "module": true,
+    "isEntry": true,
+    "file": "/home/dasyx/Documents/Dev/anime-cookin-shop/node_modules/nuxt/dist/app/entry.mjs"
+  }
+}
