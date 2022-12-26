@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const customerSchema = mongoose.Schema({
   lastname: {
     type: String,
@@ -18,7 +19,11 @@ const orderSchema = new mongoose.Schema({
     type: mongoose.Types.ObjectId,
     ref: "Client",
   },
-  items: [String],
+  articleId: {
+    type: mongoose.Types.ObjectId,
+    ref: "Article",
+  },
+  quantity: Number,
   total: Number,
 });
 const messageSchema = new mongoose.Schema({
@@ -29,11 +34,18 @@ const messageSchema = new mongoose.Schema({
   message: String,
   date: Date,
 });
+const articleSchema = new mongoose.Schema({
+  name: String,
+  description: String,
+  photo: String,
+});
 
 const customer = mongoose.model("Client", customerSchema);
 const order = mongoose.model("Commande", orderSchema);
 const message = mongoose.model("Message", messageSchema);
+const article = mongoose.model("Article", articleSchema);
 
 module.exports = customer;
 module.exports = order;
 module.exports = message;
+module.exports = article;

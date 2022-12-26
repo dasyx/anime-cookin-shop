@@ -48,7 +48,11 @@ app.use(helmet());
 app.use(mongoSanitize());
 
 // Ce middleware répondra aux requêtes envoyées à /images
-app.use("/images", express.static(path.join(__dirname, "images")));
+//const imgDir = path.resolve('/views/img/');
+
+//app.use('/views/img/', express.static(imgDir));
+
+//console.log(imgDir);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
@@ -58,5 +62,6 @@ app.listen(port, () => {
 // Récupération des informations de connexion à la db mongoose
 require("../backend/api/config/db")(app);
 
-// Récupération des informations relatives aux routes du crud
-require('../backend/api/routeHandler')(app);
+const articlesRouter = require('./routes');
+
+app.use('/', articlesRouter);
