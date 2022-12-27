@@ -6,10 +6,10 @@
       class="md:flex md:flex-row md:justify-between flex-col items-start mb-6"
     >
       <div class="text-lg font-bold">
-        {{ article.name }}
+       {{ article.name}}
       </div>
       <div class="text-white md:w-1/3 md:ml-10">
-        {{ article.description }}
+       {{ article.description}}
       </div>
       <div class="text-white font-bold">10€</div>
     </div>
@@ -37,21 +37,10 @@
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
-  data() {
-    return {
-      article: null,
-    };
-  },
-  async created() {
-    try {
-      const response = await axios.get('http://localhost:3000/id:663a9d601a19d5c25c475e556');
-      this.article = response.data;
-    } catch (err) {
-      console.error(err);
-    }
+  async asyncData({ params }) {
+    const article = await fetch('http://localhost:4000/api/articles/63aa2e0e8c6b4dbd6938bfae').then(res => res.json());
+    return { article };
   },
 };
 </script>

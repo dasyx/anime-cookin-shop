@@ -1,4 +1,7 @@
+const articleRouter = require('./routes/ArticleRoutes');
 const express = require("express");
+const app = express();
+
 // Importation du package morgan qui permettra l'utilisation de JS back/front
 const morgan = require("morgan");
 // Importation du package helmet pour sécuriser la requête http
@@ -9,10 +12,8 @@ const bodyParser = require('body-parser');
 const mongoSanitize = require("express-mongo-sanitize");
 // Importation du package gérant la connexion par cookie
 const cookieSession = require("cookie-session");
-// Importation qui donne accès au système de fichiers
-const path = require("path");
 
-const app = express();
+app.use('/api/articles', articleRouter)
 
 // Utilisation de variable d'environnement pour dissimuler les infos de connexion
 require("dotenv").config();
@@ -23,7 +24,7 @@ app.use(cors());
 app.use(bodyParser.json())
 
 // Sécurisation de la session et paramètrage du cookie de la session
-app.use(
+/* app.use(
   cookieSession({
     name: "session",
     secret: process.env.COOKIE_SESS,
@@ -34,7 +35,7 @@ app.use(
       maxAge: 60 * 60 * 1000, // 1 heure de validité
     },
   })
-);
+); */
 
 app.set('view engine', 'handlebars');
 
@@ -47,21 +48,12 @@ app.use(helmet());
 // Sanitization des données contre les attaques injections SQL
 app.use(mongoSanitize());
 
-// Ce middleware répondra aux requêtes envoyées à /images
-//const imgDir = path.resolve('/views/img/');
-
-//app.use('/views/img/', express.static(imgDir));
-
-//console.log(imgDir);
-
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
 
 // Récupération des informations de connexion à la db mongoose
-require("../backend/api/config/db")(app);
+require("./config/db")(app);
 
-const articlesRouter = require('./routes');
-
-app.use('/', articlesRouter);
+module.exports = app;
